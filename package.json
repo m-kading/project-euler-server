@@ -1,0 +1,38 @@
+{
+  "name": "project-euler-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "watch": "nodemon --ignore src/app --watch src",
+    "test": "nodemon -q -x 'yarn test:unit --silent'",
+    "test:unit": "tape src/**/*.spec.js | tap-difflet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-kading/project-euler-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-kading/project-euler-server/issues"
+  },
+  "homepage": "https://github.com/m-kading/project-euler-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "bunyan": "^1.8.15",
+    "envalid": "^7.2.2",
+    "express": "^4.17.2",
+    "ramda": "^0.27.1",
+    "response-time": "^2.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "tap-difflet": "^0.7.2",
+    "tape": "^5.4.0",
+    "yarn": "^1.22.17"
+  }
+}
