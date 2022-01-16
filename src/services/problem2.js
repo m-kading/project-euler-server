@@ -8,17 +8,13 @@ const defaultParameters = {
   upperBound: 4000000,
 };
 
-const isValEven = (val) => {
-  return R.modulo(val, 2) == 0;
-};
-
 const sumOfEvenFibonacciValues = (upperBound) => {
   let sum = 0;
   let currentVal = 1;
   let previousVal = 1;
 
   while (currentVal < upperBound) {
-    if (isValEven(currentVal)) sum += currentVal;
+    if (utils.isValEven(currentVal)) sum += currentVal;
     let tempVal = currentVal;
 
     currentVal += previousVal;
@@ -34,4 +30,3 @@ const solve = (parameters) => {
 };
 
 module.exports.solve = solve;
-module.exports.isValEven = isValEven;

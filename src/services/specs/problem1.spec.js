@@ -2,7 +2,7 @@
 
 const test = require('tape');
 
-const problem1 = require('./problem1');
+const problem1 = require('../problem1');
 
 test('problem1.solve', (t) => {
   [
